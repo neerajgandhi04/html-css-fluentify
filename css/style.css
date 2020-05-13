@@ -3,4 +3,41 @@
   border:1px solid black;
   padding:5px;
   margin:0;
+  font-family: arial;
+}
+
+.row-top, .row-bottom{
+  width: 100%;
+  padding:0 70px;
+  border-bottom: 1px solid lightgrey;
+
+  /* debug */
+  background-color: orange;
+}
+
+.row-top::after, .row-bottom::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.row.column *{
+  width: 100%;
+  display: inline-block;
+}
+
+.row.column.top *{
+  text-align: center;
+}
+
+.row.top.column{
+  width: calc(100% / 3);
+}
+
+.row.bottom.column{
+  width: calc(100% / 2);
+}
+.row.column{
+  float:left;
 }
