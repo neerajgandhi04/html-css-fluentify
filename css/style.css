@@ -14,7 +14,6 @@
 
   /* DEBUG:  */
   height: 70px;
-  background-color: green;
 }
 
 .uls::after{
@@ -31,12 +30,7 @@
   line-height: 70px;
   font-size: 10px;
   float: left;
-  /* DEBUG:  */
-  background-color: blue;
 }
-
-
-
 
 .uls > ul a{
   text-decoration: none;
@@ -79,12 +73,22 @@
 .container-header{
   width: 100%;
   padding:0 10%;
-  background-color: yellow;
 }
 
 .container-header.top{
-  background-image:;
+  background-color: #0c325a;
+  height: 100%;
+}
 
+.container-header.middle{
+  width: 100%;
+  background-image: url('../img/fluentify-jumbo.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0c325a;
+  /* DEBUG:  */
+  height: 300px;
 }
 
 .container-header.bottom{
@@ -98,7 +102,6 @@
 .container-header.bottom .text *{
   display: inline-block;
   width: 100%;
-
 }
 
 
