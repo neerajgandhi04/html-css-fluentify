@@ -74,6 +74,27 @@
 }
 .row.column{
   float:left;
+
 }
 
 /* fine MAIN */
+
+.row-footer{
+  width: 100%;
+  padding:0 70px;
+}
+
+.row-footer::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row-footer > *{
+  float: left;
+  width: calc(100% / 2);
+}
+
+.row-footer .column.one span{
+  line-height: 70px;
+}
