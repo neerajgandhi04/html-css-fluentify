@@ -87,8 +87,32 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #0c325a;
-  /* DEBUG:  */
+  position: relative;
   height: 300px;
+}
+
+.header-left-text{
+  width: 40%;
+  position: absolute;
+  top:50%;
+  transform: translatey(-50%);
+}
+
+.header-text{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.header-left-text > button{
+  font-size:10px;
+  width: 140px;
+  height: 40px;
+  color:white;
+  background-color: #7cbb02;
+  border:none;
+  border-radius: 4px;
+
 }
 
 .container-header.bottom{
@@ -96,16 +120,25 @@
 
 }
 .container-header.bottom .text{
+  padding: 20px 0;
   text-align: center;
 }
 
 .container-header.bottom .text *{
+  padding: 4px;
   display: inline-block;
   width: 100%;
 }
 
+.container-header.bottom .text span:first-child{
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
-
+.container-header.bottom .text span:last-child{
+  font-size: 0.8em;
+  color:grey;
+}
 
 
 
