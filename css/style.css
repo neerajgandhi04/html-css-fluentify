@@ -1,23 +1,90 @@
 *{
   box-sizing: border-box;
-  border:1px solid black;
-  padding:5px;
+  /* border:1px solid black;
+  padding:5px; */
   margin:0;
   font-family: arial;
+}
+
+
+
+.container-header.top nav{
+  position: relative;
+
+
+  /* DEBUG:  */
+  height: 70px;
+  background-color: green;
+}
+
+.uls::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.uls{
+  width: 90%;
+}
+
+.uls > ul{
+  height: 100%;
+  line-height: 70px;
+  font-size: 10px;
+  float: left;
+  /* DEBUG:  */
+  background-color: blue;
+}
+
+
+
+
+.uls > ul a{
+  text-decoration: none;
+  color:white;
+}
+
+.uls > ul li{
+  padding-right:4%;
 }
 
 .container-header.top nav *{
   display: inline-block;
 }
 
+.container-header.top .uls{
+  height:100%;
+  position: absolute;
+  right:0;
+}
+
+#ul1{
+  width: 60%;
+  text-align: left;
+}
+
+#ul2{
+  width: 40%;
+  text-align: right;
+}
+
+.container-header.top nav > img{
+  width: 10%;
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translatey(-50%);
+}
+
+
 .container-header{
   width: 100%;
-  padding:0 70px;
+  padding:0 10%;
   background-color: yellow;
 }
 
 .container-header.top{
-  background-image:
+  background-image:;
+
 }
 
 .container-header.bottom{
@@ -30,6 +97,7 @@
 
 .container-header.bottom .text *{
   display: inline-block;
+  width: 100%;
 
 }
 
@@ -42,7 +110,7 @@
 
 .row-top, .row-bottom{
   width: 100%;
-  padding:0 70px;
+    padding:0 10%;
   border-bottom: 1px solid lightgrey;
 
   /* DEBUG:  */
@@ -79,9 +147,16 @@
 
 /* fine MAIN */
 
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
+}
+
 .row-footer{
   width: 100%;
-  padding:0 70px;
+  height: 100%;
+  padding:0 10%;
 }
 
 .row-footer::after{
@@ -91,10 +166,48 @@
 }
 
 .row-footer > *{
-  float: left;
   width: calc(100% / 2);
+  height: 100%;
+  position: relative;
+  float: left;
+
 }
 
 .row-footer .column.one span{
-  line-height: 70px;
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translatey(-50%);
+}
+
+.row-footer .column.two::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row-footer .column.two > * > *{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.col{
+  width: calc(100% / 3);
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.row-footer .col.three{
+  text-align: center;
+  margin: auto;
+}
+
+.row-footer .col.three > *{
+  display: inline-block;
+}
+
+.buttons{
+  width: 100%;
 }
