@@ -6,12 +6,46 @@
   font-family: arial;
 }
 
+.container-header.top nav *{
+  display: inline-block;
+}
+
+.container-header{
+  width: 100%;
+  padding:0 70px;
+  background-color: yellow;
+}
+
+.container-header.top{
+  background-image:
+}
+
+.container-header.bottom{
+  background-color: lightgrey;
+
+}
+.container-header.bottom .text{
+  text-align: center;
+}
+
+.container-header.bottom .text *{
+  display: inline-block;
+
+}
+
+
+
+
+
+
+/* inizio MAIN */
+
 .row-top, .row-bottom{
   width: 100%;
   padding:0 70px;
   border-bottom: 1px solid lightgrey;
 
-  /* debug */
+  /* DEBUG:  */
   background-color: orange;
 }
 
@@ -41,3 +75,5 @@
 .row.column{
   float:left;
 }
+
+/* fine MAIN */
